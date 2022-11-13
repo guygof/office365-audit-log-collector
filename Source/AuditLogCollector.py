@@ -668,9 +668,7 @@ class Config(object):
                 content_types.append(content_type)
         return content_types
 
-
-if __name__ == "__main__":
-
+def main():
     description = \
     """
     Retrieve audit log contents from Office 365 API and save to file or other output.
@@ -712,3 +710,5 @@ if __name__ == "__main__":
     collector.run()
 
 
+if __name__ == "__main__":
+    main()

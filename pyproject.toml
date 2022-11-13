@@ -1,13 +1,10 @@
 [tool.poetry]
 name = "office365-audit-log-collector"
-version = "2.1.1"
+version = "2.1"
 description = "Collect / retrieve Office365, AzureAD and DLP audit logs and output to PRTG, Azure Log Analytics Workspace, SQL, Graylog, Fluentd, and/or file output."
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-packages = [{include = "Source"}]
-
-[tool.poetry.scripts]
-collector = "Source.AuditLogCollector:main"
+packages = [{include = "office365_audit_log_collector"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

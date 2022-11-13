@@ -150,7 +150,7 @@ class AuditLogCollector(ApiConnection.ApiConnection):
 
         for interface in [FileInterface.FileInterface, AzureTableInterface.AzureTableInterface,
                           AzureBlobInterface.AzureBlobInterface, AzureOMSInterface.AzureOMSInterface,
-                          SqlInterface.SqlInterface, GraylogInterface.GraylogInterface, PRTGInterface.PRTGInterface,
+                          SqlInterface.SqlInterface, GraylogInterface.GraylogInterface,
                           FluentdInterface.FluentdInterface]:
             self.interfaces[interface] = interface(collector=self, **kwargs)
 
@@ -167,9 +167,8 @@ class AuditLogCollector(ApiConnection.ApiConnection):
         logger = logging.getLogger()
         file_handler = logging.FileHandler(self.config['log', 'path'].strip("'") if self.config['log', 'path']
                                            else 'collector.log', mode='w')
-        if not self.interfaces[PRTGInterface.PRTGInterface].enabled:
-            stream_handler = logging.StreamHandler(sys.stdout)
-            logger.addHandler(stream_handler)
+        stream_handler = logging.StreamHandler(sys.stdout)
+        logger.addHandler(stream_handler)
         logger.addHandler(file_handler)
         logger.setLevel(logging.INFO if not self.config['log', 'debug'] else logging.DEBUG)
 

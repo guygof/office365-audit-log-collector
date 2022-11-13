@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "office365-audit-log-collector"
+version = "2.1"
+description = "Collect / retrieve Office365, AzureAD and DLP audit logs and output to PRTG, Azure Log Analytics Workspace, SQL, Graylog, Fluentd, and/or file output."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "Source"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+altgraph = "^0.17.2"
+azure-core = "^1.23.1"
+azure-data-tables = "^12.3.0"
+azure-storage-blob = "^12.11.0"
+beautifulsoup4 = "^4.11.1"
+certifi = "^2021.10.8"
+cffi = "^1.15.0"
+charset-normalizer = "^2.0.12"
+cryptography = "^37.0.1"
+docopt = "^0.6.2"
+docutils = "^0.18.1"
+future = "^0.18.2"
+isodate = "^0.6.1"
+js2py = "^0.71"
+numpy = "^1.22.3"
+msrest = {version = "0.6.21", platform = "windows"}
+oauthlib = "^3.2.0"
+packaging = "^21.3"
+pandas = "^1.4.2"
+pefile = "^2021.9.3"
+pipwin = {version = "^0.5.2", platform = "windows"}
+prtg = "^0.1.0.dev0"
+pycparser = "^2.21"
+pygments = "^2.11.2"
+pyjsparser = "^2.7.1"
+pyparsing = "^3.0.8"
+pypiwin32 = {version = "^223", platform = "windows"}
+pyprind = "^2.11.3"
+pysmartdl = "^1.3.4"
+python-dateutil = "^2.8.2"
+pytz = "^2022.1"
+pytz-deprecation-shim = "^0.1.0.post0"
+pywin32 = {version = "^303", platform = "windows"}
+pywin32-ctypes = {version = "^0.2.0", platform = "windows"}
+pyyaml = "^6.0"
+requests = "^2.27.1"
+requests-oauthlib = "^1.3.1"
+six = "^1.16.0"
+soupsieve = "^2.3.2.post1"
+sqlalchemy = "^1.4.35"
+tomli = "^2.0.1"
+typing-extensions = "^4.2.0"
+tzdata = "^2022.1"
+tzlocal = "^4.2"
+urllib3 = "^1.26.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

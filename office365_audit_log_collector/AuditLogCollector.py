@@ -1,8 +1,8 @@
-from Interfaces import AzureOMSInterface, SqlInterface, GraylogInterface, PRTGInterface, FileInterface, \
+from office365_audit_log_collector.Interfaces import AzureOMSInterface, SqlInterface, GraylogInterface, PRTGInterface, FileInterface, \
     AzureTableInterface, AzureBlobInterface, FluentdInterface
 import alc  # Rust based log collector Engine
-import AuditLogSubscriber
-import ApiConnection
+import office365_audit_log_collector.AuditLogSubscriber
+import office365_audit_log_collector.ApiConnection
 import os
 import sys
 import yaml

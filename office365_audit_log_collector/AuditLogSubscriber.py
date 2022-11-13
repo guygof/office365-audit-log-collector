@@ -6,7 +6,7 @@ import sys
 import logging
 from collections import OrderedDict
 # Internal libs
-import ApiConnection
+import office365_audit_log_collector.ApiConnection
 
 
 class AuditLogSubscriber(ApiConnection.ApiConnection):

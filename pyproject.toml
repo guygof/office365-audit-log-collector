@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "Source"}]
 
 [tool.poetry.scripts]
-collector = "office365-audit-log-collector.AuditLogCollector:main"
+collector = "Source.AuditLogCollector:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"

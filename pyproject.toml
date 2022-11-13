@@ -6,6 +6,9 @@ authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 packages = [{include = "Source"}]
 
+[tool.poetry.scripts]
+collector = "office365-audit-log-collector.AuditLogCollector:main"
+
 [tool.poetry.dependencies]
 python = "^3.10"
 altgraph = "^0.17.2"
@@ -51,7 +54,7 @@ sqlalchemy = "^1.4.35"
 tomli = "^2.0.1"
 typing-extensions = "^4.2.0"
 tzdata = "^2022.1"
-tzlocal = "^4.2"
+tzlocal = "^4.2.0"
 urllib3 = "^1.26.9"
 
 

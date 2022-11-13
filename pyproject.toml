@@ -53,6 +53,7 @@ typing-extensions = "^4.2.0"
 tzdata = "^2022.1"
 tzlocal = "^4.2.0"
 urllib3 = "^1.26.9"
+pyodbc = "^4.0.34"
 
 
 [build-system]
